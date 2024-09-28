@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'nunito sans';
+background-color: #202c37;
+}
+.search-filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+nav{
+    background-color:#2B3945 ;
+    height: 45px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5)
+}
+.left{
+    margin-left: 50px;
+}
+input{
+    background-color: #2B3945;
+    border: none;
+    width: 300px;
+    height: 30px;
+    text-indent: 2rem;
+    border-radius: 5px;
+    color: white;
+}
+select{
+    background-color: #2B3945;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+}
+.name{
+    display: block;
+text-align: center;
+font-size: 1.3rem;
+color: white;
+
+}
+.popu,.reg,.cap{
+    display: block;
+    text-align: center;
+    color: white;
+}
+.flag{
+    width: 300px;
+    background-color:#2B3945;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+}
+.body{
+    padding: 40px;
+    display: grid ;
+    grid-template-columns: repeat(auto-fill, minmax(300.5px,1fr));
+}
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:460px) {
+    .search-filter{
+        display: block;
+        padding: 10px;
+    }
+    .filter{
+        margin-top: 20px;
+    }
+    .body{
+        padding: 20px;
+    }
+    .flag{
+        width: 350px;
+    }
+    img{
+        width: 200px;
+        margin-left: 90px;
+    }
+    .filter{
+        font-size: .5rem;
+    }
+}
